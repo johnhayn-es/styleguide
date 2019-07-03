@@ -1,4 +1,5 @@
 import React from 'react';
+import buttonStyles from '../css/button.css';
 
 export function WidgetPages() {
   return (
@@ -57,7 +58,9 @@ export function WidgetPages() {
       </div>
 
       <div class="action-button-container">
-        <button>Different action</button>
+        <button className={`${buttonStyles.btn} ${buttonStyles.default}`}>
+          Different action
+        </button>
         <button>For a different user type</button>
         <button>Or group of actions</button>
       </div>
